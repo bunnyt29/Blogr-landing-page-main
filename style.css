@@ -1,0 +1,589 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+h2, h3{
+  letter-spacing: 0.5px;
+}
+
+h3{
+  color: hsl(208, 49%, 24%);
+}
+
+h6{
+  color: white;
+}
+
+.home{
+  background: linear-gradient( to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-image: url(images/bg-pattern-intro-desktop.svg);
+  background-image: url(images/bg-pattern-intro-desktop.svg), linear-gradient( to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-repeat: no-repeat;
+  background-size: 2000px;
+  background-position: 0;
+  height: 600px;
+  border-bottom-left-radius: 80px;
+}
+
+.header{
+  width: auto;
+  display: flex;
+  padding: 50px 150px;
+}
+
+.logo{
+  width: 10%;
+}
+
+.navigation-menu{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.navbar{
+  width: 50%;
+}
+.register-buttons{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 50px;
+  width: 50%;
+}
+
+.sign-up-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  color: hsl(13, 100%, 72%);
+  font-weight: bold;
+}
+
+
+.sign-up-button:hover{
+  background-color: hsl(355, 100%, 74%);
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  border-radius: 5px;
+  padding: 20px 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 40px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.title{
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-page{
+  text-align: center;
+  color: white;
+}
+
+.title-page h1{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.learn-more-buttons{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.special{
+  color: hsl(353, 100%, 62%)
+}
+
+.learn-more a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.learn-more a:hover{
+  background-color: white;
+  color: hsl(353, 100%, 62%);
+}
+
+.intro{
+  padding-left: 150px;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 50px;
+}
+
+.intro-title h2{
+  color: hsl(208, 49%, 24%);
+  padding-top: 150px;
+  text-align: center;
+}
+
+h2{
+  font-size: 35px;
+}
+
+h3{
+  font-size: 25px;
+}
+
+.intro-box{
+  display: flex;
+}
+
+.intro-text{
+  padding-top: 150px;
+  width: 60%;
+  display: block;
+}
+
+.intro-text h3{
+  margin-bottom: 20px;
+}
+
+.intro-text p{
+  width: 72%;
+  line-height: 27px;
+}
+
+.text-1{
+  margin-bottom: 60px;
+}
+
+.intro-image{
+  overflow: hidden;
+  margin-top: -100px;
+}
+.intro-image img{
+  width: 130%;
+}
+
+.visible{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
+
+.state{
+  padding: 0 100px;
+  height: 350px;
+  background-color: linear-gradient( to left, hsl(237, 23%, 32%), hsl(237, 17%, 21%));
+  border-radius: 0% 15% 0% 15%;
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-image: url(images/bg-pattern-circles.svg), linear-gradient( to left, hsl(237, 23%, 32%), hsl(237, 17%, 21%));
+  background-repeat: no-repeat;
+  background-position: left -50% bottom 20%;
+  display: flex;
+  align-items: center;
+}
+
+.state img{
+  width: 80%;
+}
+
+.image-state{
+  width: 50%;
+}
+
+.text-state{
+  width: 50%;
+  color: white;
+}
+
+.text-state p{
+  width: 70%;
+  padding-top: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.free{
+  margin-top: 250px;
+}
+
+.free-box{
+  display: flex;
+}
+
+.free-image{
+  width: 50%;
+  margin-top: -100px;
+}
+
+.free-image img{
+  margin-left: -280px;
+  width: 130%;
+}
+
+.free-text{
+  width: 50%;
+  padding-top: 90px;
+  display: block;
+  margin-left: 20px;
+}
+
+.free-text h3{
+  margin-bottom: 30px;
+}
+
+.free-text p{
+  line-height: 27px;
+  width: 68%;
+}
+
+.free-text-1{
+  margin-bottom: 60px;
+}
+
+.footer{
+  margin-top: 100px;
+  height: 250px;
+  background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 100px;
+  display: flex;
+  padding-top: 100px;
+}
+
+.logo-1{
+  width: 20%;
+  margin-top: -5px;
+}
+
+.logo-1 img{
+  float: right;
+}
+
+.links{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links ul li{
+  color: hsl(240, 2%, 79%);
+  padding-top: 20px;
+}
+
+.link h6{
+  margin-bottom: 10px;
+}
+
+.links ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.angle:hover .fa-angle-down,
+.angle .fa-angle-up{
+    display: none;
+}
+.angle:hover .fa-angle-up {
+    display: inline;
+}
+
+@media screen and (max-width: 800px){
+  .home{
+    background: linear-gradient( to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-image: url(images/bg-pattern-intro-mobile.svg);
+    background-image: url(images/bg-pattern-intro-mobile.svg), linear-gradient( to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: center;
+  }
+  .navigation-menu{
+    display: none;
+  }
+  .header{
+    padding: 50px 30px;
+  }
+
+  .title-page{
+    width: 75%;
+  }
+  .title-page h1{
+    text-align: center;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .sign-up-button{
+    width: 100px;
+    font-size: 13px;
+  }
+
+  .learn-more a{
+    width: 100px;
+    font-size: 13px;
+  }
+
+  h2{
+    font-size: 35px;
+  }
+
+  .intro-title h2{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: 25px;
+  }
+
+  .intro{
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 300px;
+  }
+
+  .intro-image{
+    margin-top: 0;
+  }
+
+  .intro-image img{
+    width: 100%;
+  }
+  .intro-box{
+    flex-direction: column-reverse;
+  }
+
+  .intro-text{
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .intro-text p{
+    width: 100%;
+  }
+
+  .intro-image img{
+    margin-bottom: 50px;
+  }
+
+  .visible{
+    display: none;
+  }
+  
+  .hidden{
+    display: block;
+  }
+
+  .state{
+    height: 650px;
+    flex-direction: column;
+    margin-top: 100px;
+    border-radius: 0% 20% 0% 20%;
+    background-size: cover;
+    padding: 0px;
+  }
+
+  .image-state{
+    width: 100%;
+  }
+
+  .text-state{
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-state p{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .state img{
+    width: 100%;
+    margin-top: -200px;
+  }
+
+  .free-box{
+    flex-direction: column;
+  }
+
+  .free-image{
+    width: 100%;
+  }
+
+  .free-image img{
+    margin: 0;
+    width: 100%;
+  }
+  
+  .free-text{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .free-text p{
+    width: 100%;
+  }
+
+  .footer{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .logo-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-1 img{
+    float: none;
+  }
+
+  .links{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .link{
+    text-align: center;
+  }
+
+  .link h6{
+    margin-top: 50px;
+  }
+}
