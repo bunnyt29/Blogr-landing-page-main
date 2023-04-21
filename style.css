@@ -47,6 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+body{
+  font-family: 'Overpass', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 600;
+}
 a{
   text-decoration: none;
   color: white;
@@ -85,6 +92,9 @@ h6{
   width: 10%;
 }
 
+.nav-toggle{
+  display: none;
+}
 .navigation-menu{
   width: 90%;
   display: flex;
@@ -430,11 +440,39 @@ h3{
     background-size: 1200px;
     background-position: center;
   }
+
+  .header{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .navigation-menu{
+    width: 20%;
+    display: block;
+    margin: auto 0;
+  }
+
+  .logo{
+    width: 80%;
+  }
+
+  .navbar{
     display: none;
   }
-  .header{
-    padding: 50px 30px;
+  
+  .register-buttons{
+    display: none;
+  }
+
+  .nav-toggle{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-toggle img{
+    width: 50%;
   }
 
   .title-page{
